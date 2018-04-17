@@ -9,33 +9,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script defer src="../server/app.js"></script>
+    <script defer src="post.js"></script>
 </head>
 <body>
     <div class='jumbotron jumbotron-fluid bg-info text-light'>
         <div class='container'>
-            <h1 class='display-3'>Welcome to My Blog</h1>
-            <p class='lead'>About life, Tech and Love</p>
+            <h1 class='display-3'>Bob Loblaw's Law Blog</h1>
+            <p class='lead'>Blaw, blaw, blaw</p>
             <p class='lead'>
-                <button id='create-post' class='btn btn-secondary'>Create a New create-post
+                <button id='create-post' class='btn btn-secondary'>Create a New Post
                 </button>
             </p>
         </div>
     </div>
     <div class='container'>
         <div class='row'>
-            <div class='col'>
-                
-            </div>
-        </div>
-        <div class='row'>
-            <div id='sidebar' class='col-4'>
+            <div id='sidebar display-all-posts' class='col-4'>
                 <ul class='list-group'>
-
+                    
                 </ul>
             </div>
-            <div id='view' class='col-8'>
-                <form class='d-none' id='post-form' action="/posts/">
+            <div id='view' class='col-8 d-none'>
+                <form id='post-form' action="/posts/">
                     <div class='form-group'>
                         <label for="title">Title</label>
                         <input type="text" class='form-control' id='title' value>
