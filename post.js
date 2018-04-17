@@ -24,3 +24,9 @@ axios.get('http://localhost:3000/posts')
             // sidebar.appendChild(createDatButt(ele))
         })
     })
+
+function renderPost(event){
+    event.preventDefault()
+    let postId = this.id
+    let display = document.querySelector('')
+}    
